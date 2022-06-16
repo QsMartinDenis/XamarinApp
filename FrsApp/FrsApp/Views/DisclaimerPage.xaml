@@ -19,13 +19,13 @@
                         TextColor="Black"/>
 
                     <Label Padding="10" 
-                        Text="Clinical Use Consideration"
+                        Text="Lorem"
                         TextColor="Black"
                         FontSize="Title"
                         FontAttributes="Bold"/>
                     
                     <Label
-                        Text="This application website is offered as a. 1) risk assessment tool, 2) best practice guide for cinical care, 3) personal case performance repository: laudit mechanism, and 4) educational offering for the problem of pancreatic #stuia following pancreatoduodenectomy. It reflects state-of-the-art insights to current knowledge on topic (circa2021), Suggestions offered for optimizing clinical care (through the useldsuse of various Estula mitigation strategies) are derived from a progression of extensive data analyses that have been scrutinized by peer review and subsequently published in the academic literature (amply provided throughout) Proceeding further in to the site implies understanding of this background, and that the authors and designers of the product cannot be held liable per se for decisions ultimately made by the user."
+                         Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est ut libero placerat rhoncus. Vivamus mollis volutpat consequat. Aliquam ullamcorper, libero a venenatis finibus,"
                          TextColor="Black"/>
 
                     <Label Padding="10" 
@@ -35,11 +35,11 @@
                         FontAttributes="Bold"/>
 
                     <Label 
-                        Text="Data acquired from this application/website is collected on a centralized, encrypted, secure server accessible only by the authors using password protection. Data about individual patient's cases is acquired in a manner that ensures it is de identified of essential and protected medical information . Neither individual patent medical data or unique user surgeon's information will ever be shared by the authors."
+                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est ut libero placerat rhoncus. Vivamus mollis volutpat consequat. Aliquam ullamcorper, libero a venenatis finibus,"
                         TextColor="Black"/>
                     
                     <Label 
-                        Text="Individual surgeons can access information regarding their own personal (cumulativelaggregate) practice experience through the ''My Case Log'' functional page on their application website. Employing this function is highly encouraged to promote individual practice quality improvement. Variables regarding individual cases are consolidated in association with only the date the procedure was performed. On the other hand, individual surgeons/users will be fully unable to access the data of ether: 1) the collective experience of all users, or 2) other user's individual experiences."
+                        Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est ut libero placerat rhoncus. Vivamus mollis volutpat consequat. Aliquam ullamcorper, libero a venenatis finibus,"
                         TextColor="Black"/>
                     
                 </StackLayout>
