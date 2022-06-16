@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrsApp.Views.LoginPage"
+             xmlns:controls="clr-namespace:FrsApp.Controls"
+             xmlns:validation="clr-namespace:FrsApp.Validation"
+             xmlns:vm="clr-namespace:FrsApp.Views"
+             BackgroundImageSource="ic_background">
+
+
+    <Grid Padding="0" RowDefinitions="0.5*,6.5*,3*" x:Name="MainGrid">
+
+        <StackLayout></StackLayout>
+
+        <StackLayout Grid.Row="1" Padding="10" >
+
+            <Label
+                Text="The Lorem Lorem  Application"
+                FontSize="30"
+                TextColor="White"
+                HorizontalTextAlignment="Center"/>
+    
+            <Label HorizontalOptions="Center" FontSize="Medium" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span 
+                            Text="New arround here? "/>
+                        <Span
+                            Text="Sign Up" 
+                            TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="link"></TapGestureRecognizer>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <controls:CustomEntry
+                x:Name="email"
+                BackGroundColorEntry="White"
+                CornerRadiusEntry="10"
+                PlaceholderEntry="Enter Email Address"
+                HorizontalTextAlignmentEntry="Center"
+                TextLabelEntry="Invalid email address"
+                IsVisibleLabelEntry="True"
+                TextEntry="">
+                <controls:CustomEntry.Behaviors>
+                    <validation:EmailValidation/>
+                </controls:CustomEntry.Behaviors>
+            </controls:CustomEntry>
+
+            <controls:CustomEntry
+                x:Name="password"
+                BackGroundColorEntry="White"
+                CornerRadiusEntry="10"
+                PlaceholderEntry="Enter Password"
+                HorizontalTextAlignmentEntry="Center"
+                TextLabelEntry="Password is required"
+                IsVisibleLabelEntry="True">
+                <controls:CustomEntry.Behaviors>
+                    <validation:PasswordValidation/>
+                </controls:CustomEntry.Behaviors>
+            </controls:CustomEntry>
+
+            <Label 
+                Text="Forgot password?"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                TextColor="White"
+                FontSize="Medium"/>
+
+            <controls:CustomButton 
+                x:Name="button"
+                TextButton="Sign In"
+                IsEnabledButton="{Binding Value}"/>
+
+            <Label 
+                Text="Sign In with QR code"
+                HorizontalOptions="Center"
+                TextDecorations="Underline"
+                TextColor="White"
+                FontSize="Medium"/>
+            
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" />
+
+    </Grid>
+</ContentPage>

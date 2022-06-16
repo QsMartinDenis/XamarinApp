@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrsApp.Controls.CustomEntry"
+             xmlns:validation="clr-namespace:FrsApp.Validation" 
+             xmlns:resource="clr-namespace:FrsApp.Controls.Resource">
+
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="3" CornerRadius="10">
+            <Frame
+                x:Name="frame"
+                Padding="0"
+                CornerRadius="10"
+                BackgroundColor="White">
+
+                <resource:CEntry
+                    x:Name="entry"
+                    Margin="10,0"
+                    ClearButtonVisibility="WhileEditing"
+                    BackgroundColor="Transparent"
+                    Placeholder="Name"
+                    TextColor="Black"
+                    TextChanged="Entry_TextChanged">
+                </resource:CEntry>
+                
+            </Frame>
+        </Frame>
+
+        <Label 
+            x:Name="label"
+            Text="Is invalid password"
+            Margin="10,0" 
+            TextColor="Red"
+            FontSize="12"
+            IsVisible="False"
+            />
+        
+        
+        
+    </StackLayout>
+    
+</ContentView>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrsApp.Controls.CustomBar">
+
+
+    <Grid RowDefinitions="*" ColumnDefinitions="*,*,*,*,*" RowSpacing="0" ColumnSpacing="0"  Margin="0" Padding="0">
+
+        <StackLayout Grid.Column="0">
+
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <ImageButton Source="ic_home.png" WidthRequest="50" BackgroundColor="Transparent"/>
+
+                <Label 
+                    FontSize="11"
+                    Text="Home"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="End"
+                    VerticalOptions="End"/>
+            </StackLayout>
+
+        </StackLayout>
+
+        <StackLayout Grid.Column="0" Grid.RowSpan="2" >
+            <Button VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Button_Home"></Button>
+        </StackLayout>
+        
+        <StackLayout Grid.Column="1">
+
+            <ImageButton Source="ic_about.png" WidthRequest="50" BackgroundColor="Transparent"/>
+
+            <Label 
+                HorizontalOptions="Center"
+                FontSize="11"
+                Text="Considerations"
+                VerticalOptions="End"/>
+
+        </StackLayout>
+
+        <StackLayout Grid.Column="1" Grid.RowSpan="2" >
+            <Button VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Button_Considerations"></Button>
+        </StackLayout>
+
+        <StackLayout  Grid.Column="2">
+            <ImageButton Source="ic_play.png" WidthRequest="50" BackgroundColor="Transparent"/>
+
+            <Label 
+                FontSize="11"
+                Text="Video Tutorial"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="End"
+                VerticalOptions="End"/>
+        </StackLayout>
+
+        <StackLayout  Grid.Column="2" Grid.RowSpan="2" >
+            <Button VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Button_VideoTutorial"></Button>
+        </StackLayout>
+
+
+        <StackLayout Grid.Column="3" >
+
+            <ImageButton Source="ic_thanks.png"  WidthRequest="50" BackgroundColor="Transparent"/>
+
+            <Label 
+                FontSize="11"
+                Text="Thanks"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"
+                VerticalOptions="End"/>
+        </StackLayout>
+
+        <StackLayout  Grid.Column="3" Grid.RowSpan="2" >
+            <Button VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Button_Thanks"></Button>
+        </StackLayout>
+
+        <StackLayout  Grid.Column="4" >
+
+            <ImageButton Source="ic_settings.png" WidthRequest="50" BackgroundColor="Transparent"/>
+
+            <Label 
+                FontSize="11"
+                Text="Settings"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"
+                VerticalOptions="End"/>
+        </StackLayout>
+
+        <StackLayout  Grid.Column="4" Grid.RowSpan="2" >
+            <Button VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Button_Settings"></Button>
+        </StackLayout>
+
+    </Grid>
+</ContentView>

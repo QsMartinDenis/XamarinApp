@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrsApp.Views.CreateAccountPage"
+             xmlns:control="clr-namespace:FrsApp.Controls"
+             BackgroundImageSource="ic_background_2">
+
+    <Grid RowDefinitions="0.1*,8.9*,1*" ColumnDefinitions="0.5*,9.5*" Padding="10" x:Name="MainGrid">
+
+        <StackLayout Grid.Row="1" Grid.ColumnSpan="2" >
+
+            <Label 
+                Text="Create an account to get started"
+                TextColor="White"
+                FontSize="30"
+                HorizontalTextAlignment="Center"/>
+
+            <Label
+                Text="lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper feugiat sem ullamcorper"
+                TextColor="White"
+                FontSize="Small"
+                HorizontalTextAlignment="Center"/>
+
+            <control:CustomEntry
+                x:Name="FirstName"
+                BackGroundColorEntry="White"
+                HorizontalTextAlignmentEntry="Start"
+                PlaceholderEntry="First Name"
+                />
+
+            <control:CustomEntry
+                x:Name="LastName"
+                BackGroundColorEntry="White"
+                HorizontalTextAlignmentEntry="Start"
+                PlaceholderEntry="Last Name"
+                />
+
+            <control:CustomEntry
+                x:Name="EmailAddress"
+                BackGroundColorEntry="White"
+                HorizontalTextAlignmentEntry="Start"
+                PlaceholderEntry="Email Address"
+                />
+
+            <control:CustomEntry
+                x:Name="EnterPassword"
+                BackGroundColorEntry="White"
+                HorizontalTextAlignmentEntry="Start"
+                PlaceholderEntry="Enter Password"
+                />
+            <control:CustomEntry
+                BackGroundColorEntry="White"
+                PlaceholderEntry="Confirm Password"
+                IsVisibleLabelEntry="False"/>
+            <control:CustomButton
+                CornerRadiusButton="10"
+                BackGroundColorButton="Red"
+                TextButton="SIGN UP"
+                IsEnabledButton="True"
+                x:Name="button"
+                />
+
+            <Label
+                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper feugiat sem ullamcorper ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque non nunc sit amet mattis. Cras luctus ipsum lectus. Mauris molestie accumsan leo aliquam vestibulum. Phasellus mattis velit vel mollis congue. Fusce ac condimentum est. Nulla magna turpis, varius vel dictum quis, tincidunt eu nisi. Praesent sagittis tristique rutrum. Sed posuere semper fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sodales nisl quis augue suscipit, id tincidunt felis finibus. Vestibulum pulvinar nulla et faucibus bibendum. "
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                FontSize="10.5"/>
+
+            <Label
+                Text="Donec vulputate eleifend tincidunt. Donec justo nulla, posuere a nibh et, auctor egestas magna. Sed eu feugiat est. Donec elementum fringilla."
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                FontSize="10.5"/>
+
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Grid.Column="0">
+            <ImageButton 
+                HorizontalOptions="Start"
+                BackgroundColor="Transparent"
+                Source="ic_back_white"
+                IsEnabled="True"
+                Clicked="ImageButton_Clicked"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
